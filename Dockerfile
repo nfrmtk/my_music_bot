@@ -1,3 +1,0 @@
-FROM ubuntu:22.04
-
-ADD file:ff6963f777661fb16cc12fb04a97c558bd94768a6e4ab5bd90e01f3086818853 in /
