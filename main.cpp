@@ -2,7 +2,7 @@
 #include <init.hpp>
 #include <dpp/dpp.h>
 int main() {
-    dpp::cluster bot("OTExMjU5NjIyODYwNTM3ODY2.GkOVdZ.KvyV3hAecM9td-vuKnr3KH4JFI_NsHDN1Kkf6c");
+    dpp::cluster bot("abc");
 
     bot.on_slashcommand([](auto event) {
         if (event.command.get_command_name() == "ping") {
@@ -17,7 +17,5 @@ int main() {
             );
         }
     });
-    std::hash<std::basic_string<char>> hash;
-    hash("abc");
     bot.start(dpp::st_wait);
 }
